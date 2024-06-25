@@ -1,0 +1,61 @@
+.collapse{
+        width: 100vw;
+
+        @media screen and (min-width: 1200px) {
+            width: auto;
+
+          }
+}
+.navbar {
+    z-index: 2;
+  @media screen and (min-width: 1200px) {
+    &:after {
+      position: absolute;
+      content: "";
+      right: -93.5px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 94px solid $primary-dark;
+      border-right: 94px solid transparent;
+    }
+  }
+}
+.nav-item {
+  font-size: 20px;
+
+  margin-bottom: 12px;
+
+  :nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+
+    :nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav-link {
+  letter-spacing: 5.76px;
+    position: relative;
+
+    &:hover{
+        &:before{
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 12px;
+            border: 2px solid $white;
+            border-radius: 1000px;
+      
+            top: calc(50% - 6px);
+            left: -20px;
+        }
+    }
+
+}

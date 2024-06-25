@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="bg-surface">
+      <img
+        class="d-none d-md-block img-fluid"
+        src="../assets/images/banner-lg.svg"
+        alt=""
+      />
+      <img
+        class="d-block d-md-none img-fluid"
+        src="../assets/images/banner-mobile.svg"
+        alt=""
+      />
+
+      <!-- 活動目的 -->
+      <div class="bg-purpose w-100 py-80 py-lg-160">
+        <div class="container">
+          <div class="row flex-row-reverse">
+            <!-- 影片 -->
+            <div class="col-12 col-lg-6">
+              <img
+                class="img-fluid mb-40 mb-lg-0"
+                src="../assets/images/fakeVideo.png"
+                alt=""
+              />
+            </div>
+
+            <!-- 說明 -->
+            <div class="col-12 col-lg-6">
+              <!-- 標題 -->
+              <div class="d-flex align-items-end mb-24 mb-lg-40">
+                <img
+                  class="me-16"
+                  src="../assets/images/icon-purpose.svg"
+                  alt="icon_purpose"
+                />
+                <h2 class="fs-48 fw-semibold text-primary-dark m-0">
+                  活動目的
+                </h2>
+              </div>
+
+              <!-- 內文 -->
+              <p class="content text-gray-800 pe-lg-80 mb-40 mb-lg-80">
+                國家科學及技術委員會為深化科普傳播效益及培養下一代科普人才，規劃辦理第二屆「Open
+                Call科普創意松」短片徵件競賽及業師培力等系列活動，旨在鼓勵學生運用科學思維，創作科學創意影片、短影音，並藉由作品交流與業師培訓機制，輔導學生強化影片製作技巧、掌握數位影音趨勢，實現科普教育深耕校園與全民提升科學素養之目標。
+              </p>
+
+              <!-- 按鈕 -->
+              <a href="#" class="btn-main">
+                <div class="btn-main-body">
+                  <p class="me-16">簡章下載</p>
+                  <img src="../assets/images/triangle.svg" alt="" />
+                </div>
+                <div class="btn-main-outline"></div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- 活動目的 -->
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

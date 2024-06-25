@@ -1,0 +1,83 @@
+.bg-service {
+  width: 100%;
+  height: 715px;
+  background-image: url(../images/bg-service-mobile.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 557px;
+    background-image: url(../images/bg-service.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  }
+}
+
+.service {
+  &-title {
+    position: relative;
+    display: inline-block;
+    color: $white;
+    letter-spacing: 4px;
+
+    &:after {
+      position: absolute;
+      content: "服務窗口";
+      color: transparent;
+      -webkit-text-stroke: 0.5px $white;
+      right: -2px;
+      bottom: -2px;
+    }
+  }
+
+  &-subtitle {
+    position: relative;
+    width: 100%;
+
+    font-size: 18px;
+    color: $white;
+    letter-spacing: 2px;
+    text-align: left;
+
+    @media screen and (min-width: 992px) {
+      width: 25%;
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      border: 2px solid $white;
+      border-radius: 1000px;
+
+      top: calc(50% - 6px);
+      left: -20px;
+    }
+  }
+
+  &-content {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    color: $white;
+    letter-spacing: 2px;
+    text-align: left;
+
+    @media screen and (min-width: 992px) {
+      width: 75%;
+      font-size: 18px;
+    }
+  }
+
+  &-dash {
+    width: 100%;
+    height: 2px;
+    background-image: url(../images/service-dash.svg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
