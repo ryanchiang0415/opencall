@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -63,14 +69,101 @@
                 <div class="btn-main-outline"></div>
               </a>
             </div>
-
-
           </div>
         </div>
       </div>
       <!-- 活動目的 -->
     </div>
 
+    <!-- 流程圖 -->
+    <div class="bg-primary py-160">
+      <div class="container mx-auto">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- 徵件流程 -->
+            <!-- 標題 -->
+            <div class="d-flex flex-column align-items-start ms-24 ms-lg-0">
+              <div class="d-flex align-items-center">
+                <div class="circle me-40 mb-16 mb-lg-40">
+                  <p>1</p>
+                  <div class="arc"></div>
+                </div>
+                <h2 class="process-title">徵件流程</h2>
+              </div>
+
+              <div class="d-flex">
+                <div
+                  class="d-flex flex-column align-items-center me-24 me-lg-80 ms-lg-48"
+                >
+                  <div
+                    class="border border-4 border-white rounded-circle bg-secondary"
+                    style="width: 24px; height: 24px"
+                  ></div>
+                  <img
+                    class="process-dash" src="../assets/images/process-dash.svg" alt=""/>
+                </div>
+
+                <div class="mt-40">
+                  <div
+                    class="d-flex flex-column flex-lg-row align-items-lg-center mb-40"
+                  >
+                    <p class="submission-title">報名</p>
+                    <p class="fs-18 text-white mt-16 mt-lg-0 ms-lg-16">
+                      即日起至2024/10/31下午5時為止
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column flex-lg-row align-items-lg-center mb-40"
+                  >
+                    <p class="submission-title">初審</p>
+                    <p class="fs-18 text-white mt-16 mt-lg-0 ms-lg-16">
+                      預計2024年11月上旬
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column flex-lg-row align-items-lg-center mb-40"
+                  >
+                    <p class="submission-title">入圍團隊資料繳交</p>
+                    <p class="fs-18 text-white mt-16 mt-lg-0 ms-lg-16">
+                      預計2024年11月中旬
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column flex-lg-row align-items-lg-center mb-40"
+                  >
+                    <p class="submission-title">複審</p>
+                    <p class="fs-18 text-white mt-16 mt-lg-0 ms-lg-16">
+                      預計2024年11月下旬
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column flex-lg-row align-items-lg-center mb-40"
+                  >
+                    <p class="submission-title">公告獲獎名單</p>
+                    <p class="fs-18 text-white mt-16 mt-lg-0 ms-lg-16">
+                      2024年12月上旬
+                    </p>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column flex-lg-row align-items-lg-center mb-40"
+                  >
+                    <p class="submission-title">頒獎典禮暨成果展示</p>
+                    <p class="fs-18 text-white mt-16 mt-lg-0 ms-lg-16">
+                      2024年12月下旬
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

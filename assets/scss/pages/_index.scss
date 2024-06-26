@@ -1,6 +1,94 @@
-.bg-purpose{
+.bg-purpose {
   background-image: url(../images/bg-purpose.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.circle {
+  position: relative;
+  width: 78px;
+  height: 78px;
+  background-color: $white;
+  border-radius: 1000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 40px;
+    color: $primary;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 140px;
+    height: 140px;
+
+    p {
+      font-size: 64px;
+      color: $primary;
+      font-weight: bold;
+    }
+  }
+}
+.arc {
+  position: absolute;
+  bottom: -2px;
+  left: -26px;
+  /*半圓弧*/
+  width: 96px;
+  height: 48px;
+  background-color: transparent;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px; /*增加了邊框，圓角半徑也要變化*/
+  border-left: 4px solid $white; /*邊框左邊線*/
+  border-right: 4px solid $white; /*邊框右邊線*/
+  border-bottom: 4px solid $white; /*邊框底邊線*/
+  transform: rotate(45deg);
+
+  
+  @media screen and (min-width: 992px) {
+    bottom: -2px;
+    left: -44px;
+    width: 168px;
+    height: 84px;
+  }
+}
+
+.process {
+  &-title {
+    font-size: 32px;
+    color: $secondary;
+    font-weight: bold;
+
+    @media screen and (min-width: 992px) {
+      font-size: 48px;
+    }
+  }
+
+  &-dash{
+    display: block;
+    width: 4px;
+    height: 790px;
+    object-fit: cover;
+
+    @media screen and (min-width: 992px) {
+    height: 560px;
+    }
+  }
+}
+
+.submission-title {
+  background-color: $white;
+  padding: 6px 16px;
+  border-radius: 1000px;
+
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: $primary;
+  letter-spacing: 2px;
+  vertical-align: middle;
 }

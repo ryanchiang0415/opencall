@@ -311,7 +311,8 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary:       #3C4EF1 !default;
 $primary-dark:  #2935A4 !default;
-$secondary:     $gray-600 !default;
+$secondary:     #F7BE29 !default;
+$secondary-dark:#FFDF4B !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -331,6 +332,7 @@ $theme-colors: (
   "primary":    $primary,
   "primary-dark":    $primary-dark,
   "secondary":  $secondary,
+  "secondary-dark":  $secondary-dark,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -401,14 +403,15 @@ $spacers: (
   1: $spacer * .25,
   2: $spacer * .5,
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  4: 4px,
+  6: 6px,
   8: 8px,
   12: 12px,
   16: 16px,
   24: 24px,
   32: 32px,
   40: 40px,
+  48: 48px,
   80: 80px,
   120: 120px,
   160: 160px,
@@ -576,7 +579,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "FakePearl-Regular",system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Baloo Bhai 2", "FakePearl-Regular",system-ui,  -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$prefix}font-sans-serif) !default;
@@ -618,6 +621,7 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
+  18: 18px,
   20: 20px,
   32: 32px,
   40: 40px,
