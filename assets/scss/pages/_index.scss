@@ -56,6 +56,43 @@
   }
 }
 
+.trape{
+
+  &-top-right{
+    position: relative;
+      margin-left: auto;
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: -103.5px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 104px solid $primary;
+      border-left: 104px solid transparent;
+    }
+  }
+
+  &-bottom-left{
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      right: -103.5px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 104px solid $primary;
+      border-right: 104px solid transparent;
+    }
+  }
+}
+
+.bg-process{
+  background-image: url(../images/bg-process.svg);
+}
 .process {
   &-title {
     font-size: 32px;
