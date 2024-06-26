@@ -1,3 +1,5 @@
+//活動目的
+//背景
 .bg-purpose {
   background-image: url(../images/bg-purpose.svg);
   background-position: center;
@@ -5,6 +7,72 @@
   background-repeat: no-repeat;
 }
 
+.purpose-content {
+  font-size: 18px;
+  line-height: 36px;
+}
+
+//流程圖
+// 背景
+.bg-process {
+  background-image: url(../images/bg-process.svg);
+}
+
+.process-pic {
+  &-01 {
+    position: absolute;
+    width: 80px;
+    top: -48px;
+
+    @media screen and (min-width: 576px) {
+      width: 120px;
+      top: -76px;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 200px;
+      top: -116px;
+    }
+  }
+
+  &-02 {
+    display: none;
+    position: absolute;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 48px;
+      left: 0;
+      bottom: 0;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 64px;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &-03 {
+    display: none;
+    position: absolute;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      width: 160px;
+      right: 0;
+      bottom: 80px;
+    }
+
+    @media screen and (min-width: 992px) {
+      width: 200px;
+      right: 0;
+      bottom: 104px;
+    }
+  }
+}
+
+// 數字圓圈
 .circle {
   position: relative;
   width: 78px;
@@ -33,6 +101,8 @@
     }
   }
 }
+
+// 數字圓弧
 .arc {
   position: absolute;
   bottom: -2px;
@@ -56,56 +126,18 @@
   }
 }
 
-.trape {
-  &-top-right {
-    position: relative;
-    height: 104px;
-    margin-left: auto;
+// 流程標題
+.process-title {
+  font-size: 32px;
+  color: $secondary;
+  font-weight: bold;
 
-    &:after {
-      position: absolute;
-      content: "";
-      left: -103.5px;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-bottom: 104px solid $primary;
-      border-left: 104px solid transparent;
-    }
-  }
-
-  &-bottom-left {
-    position: relative;
-    height: 104px;
-
-    &:after {
-      position: absolute;
-      content: "";
-      right: -103.5px;
-      top: 0;
-      width: 0;
-      height: 0;
-      border-top: 104px solid $primary;
-      border-right: 104px solid transparent;
-    }
+  @media screen and (min-width: 992px) {
+    font-size: 48px;
   }
 }
 
-.bg-process {
-  background-image: url(../images/bg-process.svg);
-}
-.process {
-  &-title {
-    font-size: 32px;
-    color: $secondary;
-    font-weight: bold;
-
-    @media screen and (min-width: 992px) {
-      font-size: 48px;
-    }
-  }
-}
-
+//1 徵件流程
 .submission {
   &-title {
     background-color: $white;
@@ -129,6 +161,8 @@
     }
   }
 }
+
+//2 參賽資格
 .qual {
   &-title {
     position: relative;
@@ -170,6 +204,7 @@
   }
 }
 
+//3 評選標準
 .selection {
   &-subtitle {
     font-size: 18px;
@@ -184,7 +219,7 @@
   &-dash {
     display: block;
     width: 4px;
-    height: 440px;
+    height: 520px;
     object-fit: cover;
 
     @media screen and (min-width: 992px) {
