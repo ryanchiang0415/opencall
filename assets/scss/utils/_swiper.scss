@@ -1,0 +1,78 @@
+//按鈕
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: $primary;
+
+  img{
+    width: 18px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 64px;
+    height: 64px;
+
+    img{
+        width: 28px;
+        height: auto;
+      }
+  }
+}
+
+//上一頁按鈕
+.swiper-button-prev {
+  left: 0;
+}
+
+//下一頁按鈕
+.swiper-button-next {
+  right: 0;
+}
+
+// disable 狀態
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0.8;
+}
+
+// 去除原本的 icon
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+}
+
+//頁碼
+.swiper-pagination{
+    position: relative;
+}
+
+// 頁碼位置重置
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+// 頁碼尺寸調整
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 0px;
+  background-color: $gray-200;
+  opacity: 1;
+}
+
+// 頁碼間距調整
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-right: 12px;
+}
+
+// 頁碼 active 狀態
+.swiper-pagination-bullet-active {
+  background-color: $primary;
+}

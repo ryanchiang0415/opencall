@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -76,16 +81,19 @@
     </div>
 
     <!-- 流程圖 -->
-    <div class="bg-process position-relative" style="z-index: 1;">
+    <div class="bg-process position-relative" style="z-index: 1">
       <!-- 上面的梯形 -->
       <div class="w-100 bg-surface position-relative">
-        <img class="process-pic-01" src="../assets/images/process-pic-01.svg" alt="">
-        <div
-          class="trape-top-right w-50 bg-primary"></div>
+        <img
+          class="process-pic-01"
+          src="../assets/images/process-pic-01.svg"
+          alt=""
+        />
+        <div class="trape-top-right w-50 bg-primary"></div>
       </div>
       <!-- 上面的梯形 結束 -->
 
-      <div class="container mx-auto pt-80 pt-lg-160 ">
+      <div class="container mx-auto pt-80 pt-lg-160">
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <!-- 1 徵件流程 -->
@@ -328,20 +336,265 @@
         </div>
       </div>
 
-      <img class="process-pic-02" src="../assets/images/process-pic-02.svg" alt="">
-      <img class="process-pic-03" src="../assets/images/process-pic-03.svg" alt="">
+      <img
+        class="process-pic-02"
+        src="../assets/images/process-pic-02.svg"
+        alt=""
+      />
+      <img
+        class="process-pic-03"
+        src="../assets/images/process-pic-03.svg"
+        alt=""
+      />
 
       <!-- 下面的梯形 -->
       <!-- 要讓虛線觸底 -->
-       <div class="w-100 bg-surface position-absolute bottom-0 left-0" style="z-index: -1;">
-        <div
-          class="trape-bottom-left w-50 bg-primary"></div>
-       </div>
+      <div
+        class="w-100 bg-surface position-absolute bottom-0 left-0"
+        style="z-index: -1"
+      >
+        <div class="trape-bottom-left w-50 bg-primary"></div>
+      </div>
       <!-- 下面的梯形 結束 -->
     </div>
+
+    <!-- 評審委員 -->
+    <div class="bg-jury py-80 py-lg-120">
+      <!-- 標題 -->
+      <div class="d-flex justify-content-center align-items-end mb-24 mb-lg-80">
+        <img
+          class="me-4"
+          src="../assets/images/icon-jury.svg"
+          alt="icon_purpose"
+        />
+        <h2 class="fs-48 fw-semibold text-primary-dark m-0">評審委員</h2>
+      </div>
+      <!-- 標題 結束 -->
+
+      <!-- 評審輪播 -->
+      <div class="swiper jurySwiper">
+        <!-- 輪播卡片 -->
+        <ul class="swiper-wrapper m-0 p-0">
+          <!-- 卡片-01 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/jury-pic-01.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">余承儒</p>
+              <p>
+                YouTube大中華區 <br />
+                策略合作夥伴總監
+              </p>
+            </div>
+          </li>
+          <!-- 卡片-02 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/jury-pic-02.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">奇軒</p>
+              <p>
+                台灣第1位千萬
+                <br />
+                訂閱YouTuber
+              </p>
+            </div>
+          </li>
+          <!-- 卡片-03 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/jury-pic-03.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">鄭國威</p>
+              <p>
+                PanSci泛科學
+                <br />
+                知識長
+              </p>
+            </div>
+          </li>
+          <!-- 卡片-04 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/jury-pic-04.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">焦傳金</p>
+              <p>
+                國立自然科學
+                <br />
+                博物館館長
+              </p>
+            </div>
+          </li>
+          <!-- 卡片-05 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/jury-pic-05.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">艾德</p>
+              <p>
+                Sony合作導演、
+                <br />
+                攝影師、影像講師
+              </p>
+            </div>
+          </li>
+
+          <!-- 卡片-06 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/test-01.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">Opencall</p>
+              <p>科普創意松</p>
+            </div>
+          </li>
+          <!-- 卡片-07 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/test-02.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">Opencall</p>
+              <p>科普創意松</p>
+            </div>
+          </li>
+          <!-- 卡片-08 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/test-03.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">Opencall</p>
+              <p>科普創意松</p>
+            </div>
+          </li>
+          <!-- 卡片-09 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/test-04.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">Opencall</p>
+              <p>科普創意松</p>
+            </div>
+          </li>
+          <!-- 卡片-10 -->
+          <li class="swiper-slide d-flex flex-column align-items-center">
+            <div class="jury-card-head mb-24">
+              <img
+                class="jury-card-img"
+                src="../assets/images/test-05.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-center">
+              <p class="fs-24 text-primary-dark fw-bold">Opencall</p>
+              <p>科普創意松</p>
+            </div>
+          </li>
+        </ul>
+        <!-- 輪播卡片 結束 -->
+
+        <!-- 輪播元件 -->
+        <div class="swiper-button-next">
+          <img src="../assets/images/icon-next.svg" alt="" />
+        </div>
+
+        <div class="swiper-button-prev">
+          <img src="../assets/images/icon-prev.svg" alt="" />
+        </div>
+
+        <div class="swiper-pagination mt-80"></div>
+        <!-- 輪播元件 結束-->
+      </div>
+      <!-- 評審輪播 結束 -->
+    </div>
+    <!-- 評審委員 結束-->
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".jurySwiper", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        // spaceBetween: 80,
+        breakpoints: {
+          576: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          768: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+          992: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+          },
+          1340: {
+            slidesPerView: 5,
+            slidesPerGroup: 5,
+          },
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        // mousewheel: true,
+        keyboard: true,
+      });
+    </script>
   </body>
 </html>

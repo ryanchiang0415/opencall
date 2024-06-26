@@ -5,12 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+  
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+    <div >
+      <h1>我是about</h1>
+
+      <!-- Swiper -->
+      <div class="swiper jurySwiper" style="height: 100vh;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-gray-400">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="../assets/images/icon-next.svg" alt="">
+
+        </div>
+        <div class="swiper-button-prev">
+          <img src="../assets/images/icon-prev.svg" alt="">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".jurySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+    </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
-  </body>
 </html>
