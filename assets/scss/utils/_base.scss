@@ -22,6 +22,10 @@ h1, h2, p{
       format("woff");
 }
 
+.ff-ag{
+  font-family: "Atomic Age";
+}
+
 // 按鈕
 .btn-main {
   display: block;
@@ -37,7 +41,7 @@ h1, h2, p{
     padding: 32px 0;
     background: linear-gradient(
       90deg,
-      rgba(253, 137, 0, 1) 0%,
+      $secondary 0%,
       rgba(255, 157, 43, 1) 100%
     );
 
@@ -80,7 +84,7 @@ h1, h2, p{
     &:after {
       position: absolute;
       content: "";
-      left: -39.5px;
+      left: -40px;
       top: 0;
       width: 0;
       height: 0;
@@ -92,7 +96,7 @@ h1, h2, p{
       height: 80px;
   
       &:after {
-        left: -79.5px;
+        left: -80px;
         border-bottom: 80px solid $primary;
         border-left: 80px solid transparent;
       }
@@ -102,7 +106,7 @@ h1, h2, p{
       height: 104px;
   
       &:after {
-        left: -103.5px;
+        left: -104px;
         border-bottom: 104px solid $primary;
         border-left: 104px solid transparent;
       }
@@ -116,7 +120,7 @@ h1, h2, p{
     &:after {
       position: absolute;
       content: "";
-      right: -39.5px;
+      right: -40px;
       top: 0;
       width: 0;
       height: 0;
@@ -128,7 +132,7 @@ h1, h2, p{
       height: 80px;
   
       &:after {
-        right: -79.5px;
+        right: -80px;
         border-top: 80px solid $primary;
         border-right: 80px solid transparent;
       }
@@ -138,9 +142,47 @@ h1, h2, p{
       height: 104px;
   
       &:after {
-        right: -103.5px;
+        right: -104px;
         border-top: 104px solid $primary;
         border-right: 104px solid transparent;
+      }
+    }
+  }
+
+  &-bottom-right{
+    position: absolute;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: -40px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 40px solid $primary;
+      border-left: 40px solid transparent;
+    }
+
+    @media screen and (min-width: 576px) {
+      height: 80px;
+  
+      &:after {
+        left: -80px;
+        border-bottom: 80px solid $primary;
+        border-left: 80px solid transparent;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      height: 104px;
+  
+      &:after {
+        left: -104px;
+        border-bottom: 104px solid $primary;
+        border-left: 104px solid transparent;
       }
     }
   }

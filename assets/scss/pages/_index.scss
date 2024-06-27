@@ -230,8 +230,8 @@
 
 //評審委員
 .bg-jury {
+  position: relative;
   width: 100%;
-  height: 100vh;
   background-image: url(../images/bg-jury.svg);
   background-size: cover;
   background-position: bottom, center;
@@ -249,14 +249,14 @@
     border: 2px solid $white;
     border-radius: 1000px;
 
-    &::before{
+    &::before {
       position: absolute;
       top: 24px;
       left: 24px;
       content: "";
       width: 16px;
       height: 16px;
-      background-color: #94CAB7;
+      background-color: #94cab7;
       border: 2px solid $white;
       border-radius: 1000px;
     }
@@ -266,5 +266,46 @@
     width: 200px;
     height: 200px;
     border-radius: 1000px;
+  }
+}
+
+//評選標準
+.bg-score {
+  background: radial-gradient(
+    circle,
+    rgba(69, 116, 250, 1) 00%,
+    $primary 50%
+  );
+}
+
+.score{
+  &-card{
+    max-width: 640px;
+    min-height: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../images/bg-scoreCard.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 32px 48px;
+    white-space: wrap;
+  }
+  &-circle{
+    min-width: 120px;
+    min-height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $warning;
+    border-radius: 1000px;
+
+    p{
+      color: $white;
+    }
   }
 }
