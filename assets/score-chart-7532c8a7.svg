@@ -1,0 +1,21 @@
+<svg width="773" height="773" viewBox="0 0 773 773" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="386.645" cy="386.419" r="384.962" transform="rotate(-90 386.645 386.419)" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="386.89" cy="386.173" r="324.812" transform="rotate(-90 386.89 386.173)" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="387.137" cy="385.927" r="264.662" transform="rotate(-90 387.137 385.927)" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="387.382" cy="385.681" r="204.511" transform="rotate(-90 387.382 385.681)" fill="white" fill-opacity="0.1" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="387.187" cy="386.419" r="144.361" transform="rotate(-45 387.187 386.419)" fill="white" fill-opacity="0.2" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="697.82" y1="691.66" x2="81.9462" y2="75.7863" stroke="white" stroke-width="2" stroke-dasharray="8 8"/>
+<line x1="728.157" y1="46.8643" x2="47.6335" y2="727.388" stroke="white" stroke-width="2" stroke-dasharray="8 8"/>
+<path d="M118.917 113.336C118.917 113.336 267.992 185.145 361.323 201.497C449.995 217.034 579.669 197.546 579.669 197.546C579.669 197.546 560.182 339.25 575.718 427.922C592.07 521.253 663.879 658.298 663.879 658.298C663.879 658.298 514.804 586.489 421.473 570.137C332.801 554.6 203.128 574.088 203.128 574.088C203.128 574.088 225.223 445.709 208.78 355.742C192.337 265.775 118.917 113.336 118.917 113.336Z" fill="url(#paint0_radial_369_2462)" fill-opacity="0.75"/>
+<circle cx="118.917" cy="113.336" r="10.0301" fill="#FFDF4B" stroke="white" stroke-width="4"/>
+<circle cx="663.88" cy="658.299" r="10.0301" fill="#FFDF4B" stroke="white" stroke-width="4"/>
+<circle cx="203.128" cy="574.088" r="10.0301" fill="#FFDF4B" stroke="white" stroke-width="4"/>
+<circle cx="577.263" cy="197.547" r="10.0301" fill="#FFDF4B" stroke="white" stroke-width="4"/>
+<defs>
+<radialGradient id="paint0_radial_369_2462" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(391.398 385.817) rotate(90) scale(272.481)">
+<stop stop-color="#F7BE29"/>
+<stop offset="0.5" stop-color="#FFDF4B"/>
+<stop offset="1" stop-color="#FFDF4B" stop-opacity="0.1"/>
+</radialGradient>
+</defs>
+</svg>

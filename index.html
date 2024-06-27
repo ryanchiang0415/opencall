@@ -11,13 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap"
+      rel="stylesheet"
+    />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/opencall/assets/main-f2064952.js"></script>
-    <link rel="stylesheet" href="/opencall/assets/main-4adc3543.css">
+    <script type="module" crossorigin src="/opencall/assets/main-be494e80.js"></script>
+    <link rel="stylesheet" href="/opencall/assets/main-6dc84382.css">
   </head>
   <body>
     <nav class="position-fixed px-xl-80 py-xl-24 navbar navbar-expand-xl navbar-primary-dark bg-primary-dark">
@@ -389,9 +393,9 @@
     </div>
 
     <!-- 評審委員 -->
-    <div class="bg-jury py-80 py-lg-120">
+    <div class="bg-jury py-80 pt-lg-120 pb-lg-240">
       <!-- 標題 -->
-      <div class="d-flex justify-content-center align-items-end mb-24 mb-lg-80">
+      <div class="d-flex justify-content-center align-items-end mb-40 mb-lg-80">
         <img
           class="me-4"
           src="/opencall/assets/icon-jury-3257bcb9.svg"
@@ -577,12 +581,51 @@
           <img src="/opencall/assets/icon-prev-f0245fb9.svg" alt="" />
         </div>
 
-        <div class="swiper-pagination mt-80"></div>
+        <div class="swiper-pagination mt-40"></div>
         <!-- 輪播元件 結束-->
       </div>
       <!-- 評審輪播 結束 -->
+
+      <!-- 下面的梯形 -->
+      <div class="trape-bottom-right w-50 bg-primary"></div>
+      <!-- 下面的梯形 結束 -->
     </div>
     <!-- 評審委員 結束-->
+
+    <!-- 評選標準 -->
+    <div class="bg-score py-80 py-lg-160">
+      <!-- 標題 -->
+      <div
+        class="d-flex justify-content-center align-items-center mb-40 mb-lg-80"
+      >
+        <img
+          class="me-8"
+          src="/opencall/assets/icon-score-bfb94db1.svg"
+          alt="icon_purpose"
+        />
+        <h2 class="fs-48 fw-semibold text-white m-0">評選標準</h2>
+      </div>
+      <!-- 標題 結束 -->
+
+      <div class="container">
+        <img
+          class="d-block mx-auto img-fluid"
+          src="/opencall/assets/score-chart-7532c8a7.svg"
+          alt=""
+        />
+
+        <div class="score-card">
+          <div class="score-circle me-24">
+            <p class="ff-ag fs-48">30%</p>
+          </div>
+          <div>
+            <p class="fs-24 text-warning">創意表現</p>
+            <p class="fs-20">劇情巧思與作品架構、創新的故事 敘事能力。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 評選標準 結束 -->
 
     <div class="bg-surface">
   <div class="bg-service py-120">
@@ -676,41 +719,5 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".jurySwiper", {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        // spaceBetween: 80,
-        breakpoints: {
-          576: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-          },
-          768: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
-          },
-          992: {
-            slidesPerView: 4,
-            slidesPerGroup: 4,
-          },
-          1340: {
-            slidesPerView: 5,
-            slidesPerGroup: 5,
-          },
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        // mousewheel: true,
-        keyboard: true,
-      });
-    </script>
   </body>
 </html>
